@@ -25,7 +25,7 @@ function setupPeriodicConfigReload() {
     periodInMinutes: 1
   });
   
-  console.log('Periodic config reload scheduled (every 1 minute - minimum allowed)');
+  console.log('Periodic config reload scheduled (every 1 minute)');
 }
 
 // Handle alarm events
@@ -78,7 +78,7 @@ function setupRequestMonitoring() {
 
 // Handle intercepted requests
 function handleRequest(details) {
-  // Skip non-main frame requests for now (optional)
+  // Skip non-main frame requests
   if (details.type !== 'main_frame' && details.type !== 'xmlhttprequest' && details.type !== 'fetch') {
     return;
   }

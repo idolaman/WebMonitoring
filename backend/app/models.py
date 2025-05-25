@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Dict, List
+from typing import Dict
 
 class RequestData(BaseModel):
     """Model for incoming request data."""

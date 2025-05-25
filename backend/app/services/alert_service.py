@@ -1,8 +1,7 @@
 import json
 from datetime import datetime, timezone
 from typing import List, Dict
-from pathlib import Path
-from ..models import RequestData, Rule
+from ..models import RequestData
 from ..config import ALERTS_DIR
 from ..logging_config import get_logger
 

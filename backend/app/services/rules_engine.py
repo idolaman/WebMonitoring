@@ -1,6 +1,6 @@
 import re
 from abc import ABC, abstractmethod
-from typing import List, Dict, Optional, Union, Type
+from typing import List, Dict, Optional, Type
 from ..models import RequestData, Rule, UrlRegexRule
 from ..logging_config import get_logger
 

@@ -2,7 +2,7 @@ from fastapi import FastAPI, BackgroundTasks, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from cachetools import cached, TTLCache
 
-from .models import RequestData, RequestResponse, Rule
+from .models import RequestData, RequestResponse
 from .providers.monitoring_profile_provider import MonitoringProfileProvider
 from .services.alert_service import log_alert
 from .services.rules_engine import create_rule_from_dict, RulesEngine
