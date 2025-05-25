@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #333;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+      color: #2196f3;
+    }
+    
+    .version {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+    }
+    
+    .description {
+      margin-bottom: 20px;
+    }
+    
+    .feature-list {
+      margin: 15px 0;
+      padding-left: 0;
+    }
+    
+    .feature-item {
+      list-style: none;
+      padding: 5px 0;
+      position: relative;
+      padding-left: 20px;
+    }
+    
+    .feature-item:before {
+      content: "•";
+      color: #2196f3;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+    
+    .note {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 13px;
+      color: #666;
+      border-left: 3px solid #2196f3;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 class="title">Request Monitor</h1>
+    <div class="version">Version 1.0</div>
+  </div>
+  
+  <div class="description">
+    <p>This extension monitors web requests to specific domains and sends them to a backend system for analysis and alerting.</p>
+    
+    <p><strong>How it works:</strong></p>
+    <ul class="feature-list">
+      <li class="feature-item">Automatically fetches monitoring configuration from your backend</li>
+      <li class="feature-item">Monitors network requests to configured domains</li>
+      <li class="feature-item">Sends request data to backend for pattern analysis</li>
+      <li class="feature-item">Runs silently in the background</li>
+    </ul>
+  </div>
+  
+  <div class="note">
+    <strong>Privacy:</strong> Only monitors domains specified by your backend configuration. All data is sent to your configured backend server only.
+  </div>
+</body>
+</html> 

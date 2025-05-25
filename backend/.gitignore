@@ -1,0 +1,11 @@
+# Poetry lock file
+poetry.lock
+
+# Python cache directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Alerts directory containing log files
+alerts/ 

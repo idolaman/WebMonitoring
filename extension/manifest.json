@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Request Monitor",
+  "version": "1.0",
+  "description": "Monitor and analyze web requests",
+  
+  "permissions": [
+    "webRequest",
+    "activeTab",
+    "alarms"
+  ],
+  
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Request Monitor"
+  }
+} 

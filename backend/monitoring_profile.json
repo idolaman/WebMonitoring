@@ -1,0 +1,27 @@
+{
+  "domains": [
+    "www.facebook.com",
+    "login.example.com", 
+    "api.payments.net"
+  ],
+  "rules": [
+    {
+      "name": "Facebook Login",
+      "type": "url-regex",
+      "pattern": ".*facebook\\.com/login.*",
+      "severity": "high"
+    },
+    {
+      "name": "Payment API",
+      "type": "url-regex",
+      "pattern": ".*api\\.payments\\.net/.*", 
+      "severity": "medium"
+    },
+    {
+      "name": "Login Endpoint",
+      "type": "url-regex",
+      "pattern": ".*login\\.example\\.com/.*",
+      "severity": "medium"
+    }
+  ]
+} 
