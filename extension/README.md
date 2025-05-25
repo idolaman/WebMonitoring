@@ -15,6 +15,5 @@ The extension runs in the background, automatically syncing monitored domains fr
 
 1. Start your backend API on `http://localhost:8000`
 2. Install the extension
-3. Click the extension icon to view status
 
 The extension automatically fetches configuration from your backend and begins monitoring configured domains. 
